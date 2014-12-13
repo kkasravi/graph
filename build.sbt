@@ -15,7 +15,8 @@ resolvers ++= Seq(
 
 parallelExecution in Test := false
 
-val scalaGraphVersion = "1.9.0"
+val scalaGraphVersion = "1.9.0-SNAPSHOT"
+val scalaGraphJsonVersion = "1.9.2-SNAPSHOT"
 val scalaVersionNumber = "2.11.3"
 val slf4jVersion = "1.7.5"
 
@@ -26,6 +27,6 @@ libraryDependencies ++= Seq(
   "org.slf4j" % "jcl-over-slf4j" % slf4jVersion,
   "org.scala-lang" % "scala-reflect" % scalaVersionNumber,
   "com.assembla.scala-incubator" %% "graph-core" % scalaGraphVersion,
-  "com.assembla.scala-incubator" %% "graph-constrained" % scalaGraphVersion,
+  "com.assembla.scala-incubator" %% "graph-json" % scalaGraphJsonVersion,
   "com.assembla.scala-incubator" %% "graph-dot" % scalaGraphVersion
 )

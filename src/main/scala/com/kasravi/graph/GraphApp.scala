@@ -47,11 +47,7 @@ object GraphApp extends App {
     "listening to music")
   println(topologicallySort(typicalDay))
 
-  val t = typicalDay.nodes.head.outerNodeTraverser
-  val u = t.withKind(DepthFirst)
-  val list = u.map(f => {
-    f
-  })
+  println(typicalDay.topologicalSort)
 
   val dotRoot = DotRootGraph (directed = true,
     id       = None,
